@@ -90,9 +90,9 @@ const Services = () => {
 
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full">
+      {/* <div className="absolute bottom-0 left-0 w-full">
         <SectionDivider />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import { Play, Star, Heart } from 'lucide-react';
-import nutricionistaHero from '../assets/img/hero/hero_destaque.png';
+import nutricionistaHero from '../assets/img/hero/hero_destaque2.png';
 
 const Hero = () => {
   return (
     <section className="relative bg-cover bg-center h-screen flex items-center" style={{ backgroundImage: `url(${nutricionistaHero})` }}>
       <div className="absolute inset-0 bg-gradient-to-b from-sage-100/80 via-white/70 to-golden-100/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/70"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div></div> {/* Coluna vazia para empurrar o conteúdo para a direita */}
           <div className="space-y-6 lg:space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
@@ -97,7 +99,7 @@ const Hero = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0,0 C480,100 960,100 1440,0 L1440,100 L0,100 Z"
+            d="M0,100 C480,0 960,0 1440,100 L1440,100 L0,100 Z"
             fill="#ffffff"
           />
         </svg>
