@@ -80,7 +80,7 @@ const Statistics = () => {
               alt="Consulta nutricional"
               className="rounded-3xl shadow-2xl w-full"
             />
-            <div className="absolute -top-4 lg:-top-6 -left-4 lg:-left-6 bg-white rounded-2xl p-3 lg:p-4 shadow-xl">
+            <div className="absolute -top-4 lg:-top-6 -left-4 lg:-left-6 bg-white rounded-2xl p-3 lg:p-4 shadow-xl z-20">
               <div className="text-center">
                 <p className="text-xl lg:text-2xl font-bold text-sage-600">98%</p>
                 <p className="text-xs lg:text-sm text-neutral-600">Taxa de Sucesso</p>

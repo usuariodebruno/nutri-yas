@@ -28,7 +28,7 @@ const CallToAction = () => {
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl z-20">
               <div className="flex items-center space-x-4">
                 <div className="bg-sage-100 p-3 rounded-full">
                   <CheckCircle className="h-6 w-6 text-sage-600" />
@@ -40,7 +40,7 @@ const CallToAction = () => {
               </div>
             </div>
 
-            <div className="absolute top-8 -left-6 bg-white rounded-2xl p-4 shadow-xl">
+            <div className="absolute top-8 -left-6 bg-white rounded-2xl p-4 shadow-xl z-20">
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-sage-600" />
                 <div>
