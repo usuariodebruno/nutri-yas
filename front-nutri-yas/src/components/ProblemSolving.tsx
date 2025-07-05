@@ -47,7 +47,7 @@ const ProblemSolving = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
-            Ajudamos Clientes a Resolver
+            Ajudamos Pessoas a Resolver
             <span className="text-sage-600"> Problemas Complexos</span>
           </h2>
           <p className="text-base lg:text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -70,9 +70,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-2 rounded-lg">
                     {React.createElement(solutions[0].icon, { className: "h-5 w-5 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm font-bold">1</span>
-                  </div>
+                  {/* <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">2</span>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-lg mb-1">{solutions[0].title}</h3>
                 <p className="text-sm text-white/90">{solutions[0].description}</p>
@@ -94,9 +94,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-2 rounded-lg">
                     {React.createElement(solutions[1].icon, { className: "h-5 w-5 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
+                  {/* <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">2</span>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-lg mb-1">{solutions[1].title}</h3>
                 <p className="text-sm text-white/90">{solutions[1].description}</p>
@@ -118,9 +118,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-1.5 rounded-lg">
                     {React.createElement(solutions[2].icon, { className: "h-4 w-4 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                  {/* <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
                     <span className="text-white text-xs font-bold">3</span>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-sm mb-1">{solutions[2].title}</h3>
                 <p className="text-xs text-white/90">{solutions[2].description}</p>
@@ -141,9 +141,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-1.5 rounded-lg">
                     {React.createElement(solutions[3].icon, { className: "h-4 w-4 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                  {/* <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
                     <span className="text-white text-xs font-bold">4</span>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-sm mb-1">{solutions[3].title}</h3>
                 <p className="text-xs text-white/90">{solutions[3].description}</p>
@@ -164,9 +164,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-1.5 rounded-lg">
                     {React.createElement(solutions[4].icon, { className: "h-4 w-4 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                  {/* <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
                     <span className="text-white text-xs font-bold">5</span>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-sm mb-1">{solutions[4].title}</h3>
                 <p className="text-xs text-white/90">{solutions[4].description}</p>
@@ -187,9 +187,9 @@ const ProblemSolving = () => {
                   <div className="bg-coral-500 p-1.5 rounded-lg">
                     {React.createElement(solutions[5].icon, { className: "h-4 w-4 text-white" })}
                   </div>
-                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                  {/* <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
                     <span className="text-white text-xs font-bold">6</span>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold text-sm mb-1">{solutions[5].title}</h3>
                 <p className="text-xs text-white/90">{solutions[5].description}</p>

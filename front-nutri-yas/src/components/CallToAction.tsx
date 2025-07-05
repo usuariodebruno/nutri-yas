@@ -28,15 +28,16 @@ const CallToAction = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative">
-            <div className="bg-gradient-to-r from-sage-500 to-golden-500 rounded-3xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-sage-400 rounded-full -translate-y-20 translate-x-20 opacity-50"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-golden-600 rounded-full translate-y-16 -translate-x-16 opacity-50"></div>
-              
+            {/* <div className="bg-gradient-to-r from-sage-500 to-golden-500 rounded-3xl p-8 relative overflow-hidden"> */}
+            <div className="">
+              {/* <div className="absolute top-0 right-0 w-40 h-40 bg-sage-400 rounded-full -translate-y-20 translate-x-20 opacity-50"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-golden-600 rounded-full translate-y-16 -translate-x-16 opacity-50"></div> */}
+
               <div className="relative z-10">
                 <img
                   src="https://images.pexels.com/photos/5945741/pexels-photo-5945741.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Mulher com smoothie verde"
-                  className="w-full max-w-md mx-auto rounded-2xl"
+                  className="w-full max-w-lg mx-auto rounded-2xl"
                 />
               </div>
             </div>
@@ -47,7 +48,7 @@ const CallToAction = () => {
                   <CheckCircle className="h-6 w-6 text-sage-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900">(Programas) <br/> Detox & Perda de Peso</p>
+                  <p className="font-semibold text-neutral-900">(Programas) <br /> Detox & Perda de Peso</p>
                   <p className="text-sm text-neutral-600">Especialista em smoothie verde</p>
                 </div>
               </div>
@@ -57,7 +58,7 @@ const CallToAction = () => {
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-sage-600" />
                 <div>
-                  <p className="font-semibold text-neutral-900 text-sm">(Desafios)<br/>Resultados Rápidos</p>
+                  <p className="font-semibold text-neutral-900 text-sm">(Desafios)<br />Resultados Rápidos</p>
                   <p className="text-xs text-neutral-600">Em apenas 30 dias</p>
                 </div>
               </div>
@@ -67,14 +68,12 @@ const CallToAction = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold text-white">
-                Nosso Tempo Para
-                <span className="text-sage-200"> Preparar Para</span>
-                O Futuro
+                <span className="text-[#D94E4E]">Cuide de você agora </span>
+                e viva um futuro mais leve, saudável e cheio de energia!
               </h2>
               <p className="text-lg text-white/90 leading-relaxed">
-                Junte-se ao nosso programa abrangente de nutrição projetado para transformar sua 
-                saúde e estilo de vida. Obtenha planos de refeições personalizados, orientação especializada 
-                e suporte contínuo em sua jornada de bem-estar.
+                Participe do nosso programa completo de nutrição e transforme sua saúde de forma prática e duradoura.
+                Receba planos de alimentação personalizados, acompanhamento profissional e um suporte contínuo para alcançar seus objetivos com mais segurança e motivação.
               </p>
             </div>
 
@@ -95,7 +94,7 @@ const CallToAction = () => {
                     R$149<span className="text-lg text-neutral-600">/mês</span>
                   </p>
                 </div>
-                <Link 
+                <Link
                   to="/cadastro"
                   className="bg-gradient-to-r from-coral-500 to-orange-500 hover:from-coral-600 hover:to-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-all hover:scale-105"
                 >

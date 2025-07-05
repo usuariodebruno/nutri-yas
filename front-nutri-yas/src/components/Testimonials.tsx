@@ -24,11 +24,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-neutral-900 mb-4">
-            Veja Avaliações dos Nossos
-            <span className="text-sage-600"> Clientes</span>
+            Veja Avaliações dos <span className="text-sage-600">Nossos Pacientes</span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Leia o que nossos clientes satisfeitos têm a dizer sobre sua jornada de transformação 
+            Leia o que nossos pacientes satisfeitos têm a dizer sobre sua jornada de transformação 
             com nossos programas de nutrição.
           </p>
         </div>

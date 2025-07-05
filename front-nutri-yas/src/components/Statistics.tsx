@@ -37,7 +37,7 @@ const Statistics = () => {
             </h2>
             <p className="text-lg text-neutral-600">
               Nossos programas nutricionais cientificamente comprovados entregam resultados excepcionais.
-              Aqui está o que nossos dados mostram sobre as taxas de sucesso dos clientes.
+              Aqui está o que nossos dados mostram sobre as taxas de sucesso dos pacientes.
             </p>
           </div>
 

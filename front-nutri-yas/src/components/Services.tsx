@@ -1,6 +1,5 @@
 import React from 'react';
 import { Heart, Target, Utensils, Leaf } from 'lucide-react';
-import SectionDivider from "./SectionDivider"
 
 const services = [
   {
@@ -27,7 +26,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="relative py-16 lg:py-20 pb-24 lg:pb-32 bg-gradient-to-b from-white to-peach-300/30 rounded-t-3xl">
+    <section className="relative py-16 lg:py-20 pb-24 lg:pb-32 bg-gradient-to-b from-white to-[#D9A036]/15 rounded-t-3xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 lg:space-y-8">
@@ -86,8 +85,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
