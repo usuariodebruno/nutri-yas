@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0 pt-4">
               <div className="flex items-center">
                 <div className="bg-sage-100 p-3 rounded-full">
-                  <Heart className="h-6 w-6 text-sage-600" />
+                  <Heart className="h-6 w-6 text-golden-500" />
                 </div>
                 <span className="ml-3 text-sm text-white">Nutrição Personalizada</span>
               </div>
@@ -57,49 +57,17 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className="relative mt-8 lg:mt-0">
-            <div className="relative z-10">
-              <img
-                src={nutricionistaHero}
-                alt="Nutricionista Yasmin sorrindo com frutas"
-                className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/4]"
-              />
-            </div>
-            <div className="absolute top-4 lg:top-8 -right-2 lg:-right-4 bg-white/80 backdrop-blur-sm rounded-2xl p-3 lg:p-4 shadow-lg">
-              <div className="flex items-center space-x-2 lg:space-x-3">
-                <div className="w-8 h-8 lg:w-12 lg:h-12 bg-sage-100 rounded-full flex items-center justify-center">
-                  <Star className="h-4 w-4 lg:h-6 lg:w-6 text-sage-600" />
-                </div>
-                <div>
-                  <p className="font-semibold text-neutral-900 text-sm lg:text-base">Resultados Excelentes</p>
-                  <p className="text-xs lg:text-sm text-neutral-600">98% Taxa de Sucesso</p>
-                </div>
-              </div>
-            </div>
-            <div className="absolute -bottom-2 lg:-bottom-4 left-4 lg:left-8 bg-white/80 backdrop-blur-sm rounded-2xl p-3 lg:p-4 shadow-lg">
-              <div className="flex items-center space-x-2 lg:space-x-3">
-                <div className="w-8 h-8 lg:w-12 lg:h-12 bg-coral-100 rounded-full flex items-center justify-center">
-                  <Heart className="h-4 w-4 lg:h-6 lg:w-6 text-coral-500" />
-                </div>
-                <div>
-                  <p className="font-semibold text-neutral-900 text-sm lg:text-base">Estilo de Vida Saudável</p>
-                  <p className="text-xs lg:text-sm text-neutral-600">Planos Personalizados</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
           viewBox="0 0 1440 100"
-          className="w-full h-[100px]"
+          className="w-full h-[75px]"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0,100 C480,0 960,0 1440,100 L1440,100 L0,100 Z"
+            d="M0,100 C100,0 200,0 400,0 L1440,0 L1440,100 L0,100 Z"
             fill="#ffffff"
           />
         </svg>

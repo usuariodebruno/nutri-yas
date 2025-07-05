@@ -1,5 +1,6 @@
 import React from 'react';
 import { TrendingDown, Users, Utensils, Baby, Leaf, Apple } from 'lucide-react';
+import bgProblemSolving from '../assets/img/problemSolving/bg_problem_solving.png';
 
 const solutions = [
   {
@@ -42,51 +43,166 @@ const solutions = [
 
 const ProblemSolving = () => {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="relative py-16 lg:py-20 pb-24 lg:pb-32 bg-gradient-to-b from-sage-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
-            Soluções Nutricionais
-            <span className="text-sage-600"> Especializadas</span>
+            Ajudamos Clientes a Resolver
+            <span className="text-sage-600"> Problemas Complexos</span>
           </h2>
           <p className="text-base lg:text-lg text-neutral-600 max-w-2xl mx-auto">
-            Nossa abordagem abrangente oferece soluções nutricionais personalizadas 
-            para diferentes necessidades e objetivos de saúde.
+            Soluções nutricionais personalizadas para transformar sua saúde e bem-estar
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {solutions.map((solution, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
-                <div className="aspect-w-16 aspect-h-10 relative">
-                  <img
-                    src={solution.image}
-                    alt={solution.title}
-                    className="w-full h-40 lg:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                </div>
-                
-                <div className="p-4 lg:p-6">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="bg-sage-100 p-2 rounded-lg group-hover:bg-gradient-to-r group-hover:from-sage-500 group-hover:to-golden-500 transition-all">
-                      <solution.icon className="h-4 w-4 lg:h-5 lg:w-5 text-sage-600 group-hover:text-white" />
-                    </div>
-                    <h3 className="font-semibold text-neutral-900 text-sm lg:text-base">{solution.title}</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
+          {/* Card 1 - Grande */}
+          <div className="lg:col-span-2 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-80">
+              <img
+                src={solutions[0].image}
+                alt={solutions[0].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <div className="flex items-center space-x-3 mb-2">
+                  <div className="bg-coral-500 p-2 rounded-lg">
+                    {React.createElement(solutions[0].icon, { className: "h-5 w-5 text-white" })}
                   </div>
-                  <p className="text-neutral-600 text-xs lg:text-sm">{solution.description}</p>
-                </div>
-
-                <div className="absolute top-4 right-4">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-2">
-                    <solution.icon className="h-3 w-3 lg:h-4 lg:w-4 text-sage-600" />
+                  <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">1</span>
                   </div>
                 </div>
+                <h3 className="font-bold text-lg mb-1">{solutions[0].title}</h3>
+                <p className="text-sm text-white/90">{solutions[0].description}</p>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Card 2 - Médio */}
+          <div className="lg:col-span-2 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-80">
+              <img
+                src={solutions[1].image}
+                alt={solutions[1].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <div className="flex items-center space-x-3 mb-2">
+                  <div className="bg-coral-500 p-2 rounded-lg">
+                    {React.createElement(solutions[1].icon, { className: "h-5 w-5 text-white" })}
+                  </div>
+                  <div className="bg-coral-500 w-8 h-8 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">2</span>
+                  </div>
+                </div>
+                <h3 className="font-bold text-lg mb-1">{solutions[1].title}</h3>
+                <p className="text-sm text-white/90">{solutions[1].description}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Cards menores */}
+          <div className="lg:col-span-1 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-64">
+              <img
+                src={solutions[2].image}
+                alt={solutions[2].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="bg-coral-500 p-1.5 rounded-lg">
+                    {React.createElement(solutions[2].icon, { className: "h-4 w-4 text-white" })}
+                  </div>
+                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">3</span>
+                  </div>
+                </div>
+                <h3 className="font-bold text-sm mb-1">{solutions[2].title}</h3>
+                <p className="text-xs text-white/90">{solutions[2].description}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-1 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-64">
+              <img
+                src={solutions[3].image}
+                alt={solutions[3].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="bg-coral-500 p-1.5 rounded-lg">
+                    {React.createElement(solutions[3].icon, { className: "h-4 w-4 text-white" })}
+                  </div>
+                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">4</span>
+                  </div>
+                </div>
+                <h3 className="font-bold text-sm mb-1">{solutions[3].title}</h3>
+                <p className="text-xs text-white/90">{solutions[3].description}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-1 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-64">
+              <img
+                src={solutions[4].image}
+                alt={solutions[4].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="bg-coral-500 p-1.5 rounded-lg">
+                    {React.createElement(solutions[4].icon, { className: "h-4 w-4 text-white" })}
+                  </div>
+                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">5</span>
+                  </div>
+                </div>
+                <h3 className="font-bold text-sm mb-1">{solutions[4].title}</h3>
+                <p className="text-xs text-white/90">{solutions[4].description}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-1 group cursor-pointer">
+            <div className="relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2 h-64">
+              <img
+                src={solutions[5].image}
+                alt={solutions[5].title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="bg-coral-500 p-1.5 rounded-lg">
+                    {React.createElement(solutions[5].icon, { className: "h-4 w-4 text-white" })}
+                  </div>
+                  <div className="bg-coral-500 w-6 h-6 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">6</span>
+                  </div>
+                </div>
+                <h3 className="font-bold text-sm mb-1">{solutions[5].title}</h3>
+                <p className="text-xs text-white/90">{solutions[5].description}</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full h-20">
+        <div className="w-full h-full bg-white" style={{
+          borderTopLeftRadius: '100px',
+          borderTopRightRadius: '0px'
+        }}></div>
       </div>
     </section>
   );

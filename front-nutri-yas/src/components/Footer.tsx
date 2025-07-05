@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="bg-gradient-to-r from-sage-500 to-golden-500 text-white p-2 rounded-lg">
                 <User className="h-6 w-6" />
               </div>
-              <span className="ml-2 text-xl font-bold">VidaSaudável</span>
+              <span className="ml-2 text-xl font-bold">Yasmin Araújo</span>
             </Link>
             <p className="text-neutral-400 leading-relaxed text-sm lg:text-base">
               Nutrição com propósito, saúde e prazer. Transforme seu estilo de vida 
@@ -117,7 +117,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-neutral-800 mt-6 lg:mt-8 pt-6 lg:pt-8 text-center text-neutral-400 text-sm">
-          <p>&copy; 2024 VidaSaudável. Todos os direitos reservados. | Política de Privacidade | Termos de Serviço</p>
+          <p>&copy; 2025 Yasmin Araújo. Todos os direitos reservados. | Política de Privacidade | Termos de Serviço</p>
         </div>
       </div>
     </footer>

@@ -13,7 +13,7 @@ const Header = () => {
             <div className="bg-gradient-to-r from-sage-500 to-golden-500 text-white p-2 rounded-lg">
               <User className="h-6 w-6" />
             </div>
-            <span className="ml-2 text-xl font-bold text-white">VidaSaudável</span>
+            <span className="ml-2 text-xl font-bold text-white">Yasmin Araújo</span>
           </Link>
 
           <nav className="hidden md:flex space-x-8">

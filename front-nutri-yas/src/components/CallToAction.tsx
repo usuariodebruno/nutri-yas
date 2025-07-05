@@ -11,9 +11,22 @@ const features = [
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-peach-300/50 to-sage-400/30">
+    <section className="relative pt-32 lg:pt-40 pb-20 bg-[#364030]">
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+        <svg
+          viewBox="0 0 1440 75"
+          className="w-full h-[75px]"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1440,0 C1340,75 1240,75 1040,75 L0,75 L0,0 L1440,0 Z"
+            fill="#f9fafb"
+          />
+        </svg>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative">
             <div className="bg-gradient-to-r from-sage-500 to-golden-500 rounded-3xl p-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-sage-400 rounded-full -translate-y-20 translate-x-20 opacity-50"></div>
@@ -34,7 +47,7 @@ const CallToAction = () => {
                   <CheckCircle className="h-6 w-6 text-sage-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900">Detox & Perda de Peso</p>
+                  <p className="font-semibold text-neutral-900">(Programas) <br/> Detox & Perda de Peso</p>
                   <p className="text-sm text-neutral-600">Especialista em smoothie verde</p>
                 </div>
               </div>
@@ -44,7 +57,7 @@ const CallToAction = () => {
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-sage-600" />
                 <div>
-                  <p className="font-semibold text-neutral-900 text-sm">Resultados Rápidos</p>
+                  <p className="font-semibold text-neutral-900 text-sm">(Desafios)<br/>Resultados Rápidos</p>
                   <p className="text-xs text-neutral-600">Em apenas 30 dias</p>
                 </div>
               </div>
@@ -53,12 +66,12 @@ const CallToAction = () => {
 
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-neutral-900">
+              <h2 className="text-4xl font-bold text-white">
                 Nosso Tempo Para
-                <span className="text-sage-600"> Preparar Para</span>
+                <span className="text-sage-200"> Preparar Para</span>
                 O Futuro
               </h2>
-              <p className="text-lg text-neutral-600 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 Junte-se ao nosso programa abrangente de nutrição projetado para transformar sua 
                 saúde e estilo de vida. Obtenha planos de refeições personalizados, orientação especializada 
                 e suporte contínuo em sua jornada de bem-estar.
@@ -68,8 +81,8 @@ const CallToAction = () => {
             <div className="grid grid-cols-2 gap-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="h-5 w-5 text-sage-600 flex-shrink-0" />
-                  <span className="text-neutral-700">{feature}</span>
+                  <CheckCircle className="h-5 w-5 text-sage-200 flex-shrink-0" />
+                  <span className="text-white">{feature}</span>
                 </div>
               ))}
             </div>
@@ -93,8 +106,8 @@ const CallToAction = () => {
 
             <div className="flex items-center space-x-6 pt-4">
               <div className="flex items-center">
-                <Users className="h-5 w-5 text-sage-600 mr-2" />
-                <span className="text-sm text-neutral-600">Junte-se a 2000+ membros</span>
+                <Users className="h-5 w-5 text-sage-200 mr-2" />
+                <span className="text-sm text-white/90">Junte-se a 2000+ membros</span>
               </div>
               <div className="flex items-center">
                 <div className="flex text-golden-500">
@@ -104,7 +117,7 @@ const CallToAction = () => {
                     </svg>
                   ))}
                 </div>
-                <span className="ml-2 text-sm text-neutral-600">4.9/5 Avaliação</span>
+                <span className="ml-2 text-sm text-white/90">4.9/5 Avaliação</span>
               </div>
             </div>
           </div>
